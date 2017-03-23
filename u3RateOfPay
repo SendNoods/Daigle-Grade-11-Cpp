@@ -1,0 +1,28 @@
+// Name: Riley Daigle
+// Date: 23/03/2017
+// Program Name: u3RateOfPay
+// Program Description: Calculates your salary
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	double Salary, OvertimeMultiplier;
+	int Hours, OvertimeHours;
+
+	cout << "What is your salary? \n\$";
+	cin >> Salary;
+	cout << "How many hours did you work? " << endl;
+	cin >> Hours;
+	cout << "What is your overtime muliplier? " << endl;
+	cin >> OvertimeMultiplier;
+	cout << "How many hours did you work overtime? " << endl;
+	cin >> OvertimeHours;
+
+	cout << "Your salary is: $" << (Salary * Hours + (Salary * OvertimeMultiplier * OvertimeHours));
+	system("PAUSE");
+	return 0;
+}
