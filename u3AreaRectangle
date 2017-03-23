@@ -1,0 +1,34 @@
+// Name: Riley Daigle 
+// Date: 23/03/2017
+// Program Name: u3AreaRectangle
+// Program Description: Measures two rectangles and determines the one with more area
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	double Length1, Width1, Length2, Width2;
+	
+	cout << "Input Length then Width of Rectange A\n";
+	cin >> Length1;
+	cin >> Width1;
+	cout << "Input Length then Width of Rectange B\n";
+	cin >> Length2;
+	cin >> Width2;
+
+	if((Length1 * Width1) > (Length2 * Width2)) {
+		cout << "Rectange A has a larger area" << endl;
+		system("PAUSE");
+	} else if((Length1 * Width1) < (Length2 * Width2)) {
+		cout << "Rectange B has a larger area" << endl;
+		system("PAUSE");
+	} else {
+		cout << "They are equal" << endl;
+		system("PAUSE");
+	}
+	
+	return 0;
+}
