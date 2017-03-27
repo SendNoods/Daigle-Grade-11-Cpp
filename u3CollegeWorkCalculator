@@ -1,0 +1,40 @@
+// Name: Riley Daigle
+// Date: 24/03/2017
+// Program Name: College Work Calculator
+// Progeam Description: Calculates how many hours you need to work for college
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+int main(){
+	double Tuition, Residence, AdditionalFees, Salary;
+	char AdditionalFeesTrue;
+	
+	cout << "How much does Tuition Cost?\n$";
+	cin >> Tuition;
+	cout << "How much is Residence?\n$";
+	cin >> Residence;
+	cout << "Are there additonal fees? (Y/N)\n";
+	cin >> AdditionalFeesTrue;
+	if (AdditionalFeesTrue == 'Y' || AdditionalFeesTrue == 'y'){
+		cout << "How much do additional fees add up to?\n$";
+		cin >> AdditionalFees;
+	} else if (AdditionalFeesTrue == 'N' || AdditionalFeesTrue == 'n'){
+		cout << "Additional fees skiped." << endl;
+	} else {
+		cout << "Error in responce, Defaulting to No additional fees.\n";
+	}
+	cout << "We will now find out how long you will need to work to pay for College for\none year.\nWhat is your salary?\n$";
+	cin >> Salary;
+	if (AdditionalFeesTrue == 'Y' || AdditionalFeesTrue == 'y'){
+		cout << "Including additional fees." << endl;
+		cout << "You will need to work: " << ((Tuition + Residence + AdditionalFees) / Salary) << " Hours to pay for College." << endl;
+		system("PAUSE");
+	} else{
+		cout << "Not including additional fees." << endl;
+		cout << "You will need to work: " << ((Tuition + Residence ) / Salary) << " Hours to pay for College." << endl;
+		system("PAUSE");
+	}
+	return 0;
+}
