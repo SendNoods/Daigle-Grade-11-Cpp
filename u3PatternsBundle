@@ -1,0 +1,61 @@
+// Name: Riley Daigle
+// Date: 30/03/2017
+// Program Name: u3PatternsBundle
+// Program Desc: Creates Patterns
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+void createRectangle(){
+	int a, b;
+	cout << "Width of Rectangle: ";
+	cin >> a;
+	cout << "\nHeight of Rectangle: ";
+	cin >> b;
+	for(int p = 0; p < b; p++){
+		for(int o = 0; o < a; o++){
+			cout <<"*";
+		}
+		cout <<"\n";
+	}
+}
+void createTriangle(){
+	int c;
+	cout << "Height of Triangle: ";
+	cin >> c;
+	for(int i = 0; i <= c; i++){
+		for(int u = 0;u < i; u++){
+			cout << "*";
+		}
+		cout << "\n";
+	}
+}
+void createStairs(){
+	int d;
+	cout <<"How many steps: ";
+	cin >> d;
+	for(int y = 0; y < d; y++){
+		for(int t = d;t > y; t--){
+			cout << " ";
+		}
+		cout <<"#\n";
+	}
+}
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int input;
+	do{
+		cout << "1)  Rectangle\n2)  Triangle\n3)  Stairs\n0)  Exit\n:";
+		cin >> input;
+		if(input == 1){
+			createRectangle();
+		} else if(input == 2){
+			createTriangle();
+		} else if(input == 3){
+			createStairs();
+		}
+	}while(input != 0);
+	return 0;
+}
+
