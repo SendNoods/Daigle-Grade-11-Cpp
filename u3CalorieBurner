@@ -1,0 +1,22 @@
+// Name: Riley Daigle
+// Date: 30/03/2017
+// Program Name: u3CalorieBurner
+// Program Description: Calculates calories burned
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	double Calories;
+
+	cout << "How many calories do you burn a minute?\n";
+	cin >> Calories;
+	for(int i = 10; i < 35; i += 5){
+		cout << "You will burn " << Calories*i << " calories in " << i <<" minutes\n";
+	}
+	system("PAUSE");
+	return 0;
+}
+
