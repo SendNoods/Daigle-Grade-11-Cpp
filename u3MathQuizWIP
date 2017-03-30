@@ -1,0 +1,52 @@
+// u3MathQuiz.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>  
+
+using namespace std;
+void randVari(){
+	int Vari;
+	Vari = rand() % 1000 + 1;
+	if (Vari > 250){
+		Vari == 
+		cout << " + ";
+	} else if(Vari > 500; Vari >= 250){
+		Vari ==
+		cout << " - ";
+	} else if(Vari > 750; Vari >= 500){
+		Vari ==
+		cout << " x ";
+	} else{
+		Vari ==
+		cout << " ÷ ";
+	}
+}
+void randomNumGen(){
+	int Vari, NumA, NumB, Guess;
+	randVari();
+	NumA = rand() % 1000;
+	NumB = rand() % 1000;
+	cout << NumA << Vari << NumB << " = ";
+	cin >> Guess;
+
+	if(Guess == (NumA << Vari << NumB)){
+		cout << "\nCorrect!\n";
+	} else {
+		cout << "\nIncorrect!\nThe correct answer was: " << NumA + NumB <<"\n";
+	}
+}
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int input;
+	do{
+		cout << "\n1)  Display Question?\n" << "0)  Exit\n: ";
+		cin >> input;
+		if(input == 1){
+			randomNumGen();
+		}
+	}while(input != 0);
+	return 0;
+}
+
