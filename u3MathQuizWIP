@@ -1,40 +1,40 @@
-// u3MathQuiz.cpp : Defines the entry point for the console application.
-//
+
+// Name: Riley Daigle
+// Date: 30/03:2017
+// Program Name: u3MathQuiz
+// Program Description: Gives random math questions
 
 #include "stdafx.h"
 #include <iostream>
 #include <stdlib.h>  
 
 using namespace std;
-void randVari(){
-	int Vari;
-	Vari = rand() % 1000 + 1;
-	if (Vari > 250){
-		Vari == 
-		cout << " + ";
-	} else if(Vari > 500; Vari >= 250){
-		Vari ==
-		cout << " - ";
-	} else if(Vari > 750; Vari >= 500){
-		Vari ==
-		cout << " x ";
-	} else{
-		Vari ==
-		cout << " ÷ ";
-	}
-}
-void randomNumGen(){
-	int Vari, NumA, NumB, Guess;
-	randVari();
-	NumA = rand() % 1000;
+
+
+	int Vari, NumA, NumB, Guess, Answer;
+	Vari = rand() % 4;
+NumA = rand() % 1000;
 	NumB = rand() % 1000;
+if(Vari == 0){
+Answer == (NumA + NumB);
+Vari = " + ";
+} else if(Vari == 1){
+Answer == (NumA - NumB);
+Vari = " - ";
+} else if(Vari == 2){
+Answer == (NumA * NumB);
+Vari = " x ";
+} else{
+Answer == (NumA * NumB);
+Vari = " / ";
+}
 	cout << NumA << Vari << NumB << " = ";
 	cin >> Guess;
 
-	if(Guess == (NumA << Vari << NumB)){
+	if(Guess == Answer){
 		cout << "\nCorrect!\n";
 	} else {
-		cout << "\nIncorrect!\nThe correct answer was: " << NumA + NumB <<"\n";
+		cout << "\nIncorrect!\nThe correct answer was: " << Answer <<"\n";
 	}
 }
 int _tmain(int argc, _TCHAR* argv[])
@@ -49,4 +49,3 @@ int _tmain(int argc, _TCHAR* argv[])
 	}while(input != 0);
 	return 0;
 }
-
