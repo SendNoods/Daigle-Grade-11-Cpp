@@ -10,9 +10,10 @@ using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
 	double Calories;
-
+// Asks how many calories you burn
 	cout << "How many calories do you burn a minute?\n";
 	cin >> Calories;
+// Displays how many calories you burn per 5m intervals.
 	for(int i = 10; i < 35; i += 5){
 		cout << "You will burn " << Calories*i << " calories in " << i <<" minutes\n";
 	}
