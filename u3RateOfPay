@@ -12,7 +12,7 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	double Salary, OvertimeMultiplier;
 	int Hours, OvertimeHours;
-
+// Asks questions about salary and time worked.
 	cout << "What is your salary? \n\$";
 	cin >> Salary;
 	cout << "How many hours did you work? " << endl;
@@ -21,7 +21,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cin >> OvertimeMultiplier;
 	cout << "How many hours did you work overtime? " << endl;
 	cin >> OvertimeHours;
-
+// Calculates salary.
 	cout << "Your salary is: $" << (Salary * Hours + (Salary * OvertimeMultiplier * OvertimeHours));
 	system("PAUSE");
 	return 0;
