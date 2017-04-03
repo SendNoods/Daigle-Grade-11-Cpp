@@ -11,14 +11,15 @@ using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
 	double Length1, Width1, Length2, Width2;
-	
+
+// Asks length and width and allows user to input values.
 	cout << "Input Length then Width of Rectange A\n";
 	cin >> Length1;
 	cin >> Width1;
 	cout << "Input Length then Width of Rectange B\n";
 	cin >> Length2;
 	cin >> Width2;
-
+// Determines which rectangle is larger
 	if((Length1 * Width1) > (Length2 * Width2)) {
 		cout << "Rectange A has a larger area" << endl;
 		system("PAUSE");
