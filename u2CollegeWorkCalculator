@@ -11,12 +11,14 @@ int main(){
 	double Tuition, Residence, AdditionalFees, Salary;
 	char AdditionalFeesTrue;
 	
+// Asks costs and allows user to input values. 
 	cout << "How much does Tuition Cost?\n$";
 	cin >> Tuition;
 	cout << "How much is Residence?\n$";
 	cin >> Residence;
 	cout << "Are there additonal fees? (Y/N)\n";
 	cin >> AdditionalFeesTrue;
+// Changes cost calculation depending on user input.
 	if (AdditionalFeesTrue == 'Y' || AdditionalFeesTrue == 'y'){
 		cout << "How much do additional fees add up to?\n$";
 		cin >> AdditionalFees;
@@ -27,6 +29,7 @@ int main(){
 	}
 	cout << "We will now find out how long you will need to work to pay for College for\none year.\nWhat is your salary?\n$";
 	cin >> Salary;
+// Cost Calculation
 	if (AdditionalFeesTrue == 'Y' || AdditionalFeesTrue == 'y'){
 		cout << "Including additional fees." << endl;
 		cout << "You will need to work: " << ((Tuition + Residence + AdditionalFees) / Salary) << " Hours to pay for College." << endl;
