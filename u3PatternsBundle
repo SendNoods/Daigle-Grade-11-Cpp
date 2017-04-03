@@ -13,6 +13,7 @@ void createRectangle(){
 	cin >> a;
 	cout << "\nHeight of Rectangle: ";
 	cin >> b;
+// For loop to display the rectangle.
 	for(int p = 0; p < b; p++){
 		for(int o = 0; o < a; o++){
 			cout <<"*";
@@ -25,6 +26,7 @@ void createTriangle(){
 	cout << "Height of Triangle: ";
 	cin >> c;
 	for(int i = 0; i <= c; i++){
+// For loop to display the triangle.
 		for(int u = 0;u < i; u++){
 			cout << "*";
 		}
@@ -35,6 +37,7 @@ void createStairs(){
 	int d;
 	cout <<"How many steps: ";
 	cin >> d;
+// For loop to display the stairs.
 	for(int y = 0; y < d; y++){
 		for(int t = d;t > y; t--){
 			cout << " ";
@@ -45,6 +48,7 @@ void createStairs(){
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int input;
+// Loop to display menu to select Rectangle, Triangle, Stairs, or Exit.
 	do{
 		cout << "1)  Rectangle\n2)  Triangle\n3)  Stairs\n0)  Exit\n:";
 		cin >> input;
