@@ -30,7 +30,7 @@ void randomNumGen(){
 		Answer = (NumA * NumB);
 		op = " x ";
 	} else{
-		Answer = (NumA * NumB);
+		Answer = (NumA / NumB);
 		op = " / ";
 	}
 // Displays equation and allows input.
