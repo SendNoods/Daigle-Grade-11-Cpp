@@ -14,12 +14,12 @@ using namespace std;
 void randomNumGen(){
 	srand(time(NULL));
 	double Vari, NumA, NumB, Guess, Answer;
-	std::string op = " - ";
-
+	string op = " - ";
+// Generates random values for numbers and sign.
 	Vari = rand() % 4;
 	NumA = rand() % 1000;
 	NumB = rand() % 1000;
-
+// Determines what form is used depending on value generated.
 	if(Vari == 0){
 		Answer = (NumA + NumB);
 		op = " + ";
@@ -33,9 +33,10 @@ void randomNumGen(){
 		Answer = (NumA * NumB);
 		op = " / ";
 	}
+// Displays equation and allows input.
 		cout << NumA <<  op << NumB << " = ";
 		cin >> Guess;
-	
+// Displays if guess was correct or incorrect, if incorrect displays answer.
 	if(Guess == Answer){
 		cout << "\nCorrect!\n";
 	} else {
@@ -44,7 +45,8 @@ void randomNumGen(){
 }
 int _tmain(int argc, _TCHAR* argv[])
 {
-int input;
+	int input;
+// Loops menu to ask if you want a question or to exit.
 	do{
 		cout << "\n1)  Display Question?\n" << "0)  Exit\n: ";
 		cin >> input;
