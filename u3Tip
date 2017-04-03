@@ -5,7 +5,7 @@
 
 #include "stdafx.h"
 #include <iostream>
-
+using namespace std;
 
 
 int _tmain(int argc, _TCHAR* argv[])
@@ -14,11 +14,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	char Service;
 	using namespace std;
 	Tax = 1.13;
-
-	std::cout << "How much did your meal cost? $";
-	std::cin >> Meal;
-	std::cout << "How was your Service? (E|S|P) ";
-	std::cin >> Service;
+// Asks questions about meal and service
+	cout << "How much did your meal cost? $";
+	cin >> Meal;
+	cout << "How was your Service? (E|S|P) ";
+	cin >> Service;
+// Selects tip % depending on service
 	if (Service == 'E' || Service == 'e' ) {
 		Tip = Meal * 0.2;
 	}
@@ -32,8 +33,9 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << "You broke it. Good job.";
 		system("PAUSE");
 	}
-	std::cout << "Your meal cost is: $" << Meal * Tax << std::endl;
-	std::cout << "Your tip is: $" << Tip;
+// Calculates meal cost and tip ammount.
+	cout << "Your meal cost is: $" << Meal * Tax << endl;
+	cout << "Your tip is: $" << Tip;
 	system("PAUSE");
 	return 0;
 }
